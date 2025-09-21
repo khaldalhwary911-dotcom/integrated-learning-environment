@@ -1,20 +1,75 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Integrated Learning Environment
 
-# Run and deploy your AI Studio app
+A comprehensive learning platform built with React, TypeScript, and Vite.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1zKn3R2rqouoaB9P1aC41GnWzUvlPx17M
+- 🎓 Course Management
+- 👥 User Management (Students, Teachers, Admins)
+- 💰 Wallet System
+- 🧠 AI Chat Assistant
+- 📱 Responsive Design
+- 🌙 Dark/Light Theme
+- 🌍 Multi-language Support (English/Arabic)
 
-## Run Locally
+## Prerequisites
 
-**Prerequisites:**  Node.js
+- Node.js (v18 or higher)
+- npm or yarn
 
+## Local Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Set up environment variables:**
+   Create a `.env.local` file in the root directory:
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## Deployment on Vercel
+
+1. **Push to GitHub:**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/yourusername/your-repo.git
+   git push -u origin main
+   ```
+
+2. **Deploy on Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Add environment variable: `GEMINI_API_KEY`
+   - Deploy!
+
+## Environment Variables
+
+- `GEMINI_API_KEY`: Your Google Gemini API key (required for AI features)
+
+## Tech Stack
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Google Gemini AI
+
+## License
+
+This project is private and proprietary.
