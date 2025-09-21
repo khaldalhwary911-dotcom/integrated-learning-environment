@@ -11,6 +11,15 @@ export default defineConfig(({ mode }) => {
       },
       resolve: {
         extensions: ['.tsx', '.ts', '.jsx', '.js']
+      },
+      build: {
+        outDir: 'dist',
+        sourcemap: false,
+        rollupOptions: {
+          output: {
+            manualChunks: undefined
+          }
+        }
       }
     };
 });
