@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from './hooks/useAuth';
-import { SettingsProvider } from './hooks/useSettings';
+import { AuthProvider, useAuth } from './hooks/useAuth.tsx';
+import { SettingsProvider } from './hooks/useSettings.tsx';
 import LoginPage from './components/auth/LoginPage';
 import Dashboard from './components/dashboard/Dashboard';
 import ScreenShield from './components/common/ScreenShield';
